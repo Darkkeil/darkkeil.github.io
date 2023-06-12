@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.bouton{
+   display:flex;
+   margin: auto;
+   border-radius: 5px;
+   width: fit-content;
+   background-color: white;
+   padding: 15px;
+   margin-top: 2%;
+}
+
+main>div{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+main>div>a {
+    text-decoration: none;
+    padding-right : 4px;
+}
