@@ -36,11 +36,11 @@ main>h1{
     text-align: center;
 }
 
-.wrapper {
-    Border:2px solid orange;
+/*.wrapper {
+    /*Border:2px solid orange;
     border-radius: 5px;
-    /*background-color: green;*/
-}
+    /*background-color: green;
+}*/
 
 .wrapper {
     display: grid;
@@ -69,10 +69,10 @@ main>div>div>p+figure>img {
 
 footer{
   background-color: grey;
-  position: fixed;
+  /*position: fixed;
   bottom: 0;
   left : 0;
-  width: 100%;
+  width: 100%;*/
   text-align: center;
 }
 

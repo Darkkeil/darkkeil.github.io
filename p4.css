@@ -1,17 +1,17 @@
 
 html{
-    background-color: black;
+    background-color: rgb(226, 238, 237);
 }
 
 
 body{
-  color : white;
+  /*color : white;*/
   margin : 0;
   padding : 0;
 }
 
 header{
-  background-color: grey;
+  background-color: rgb(29, 216, 207);
   /*position: sticky;*/
   top: 0;
   /*right: 0;*/
@@ -33,7 +33,7 @@ header > div > p {
 }
 
 main{
-    background-color: black;
+    /*background-color: black;*/
     margin-top: 0;
     /*padding-bottom: 30em ;
     /*position: absolute;
@@ -41,7 +41,7 @@ main{
 }
 
 footer{
-    background-color: grey;
+    background-color: rgb(29, 216, 207);
     width: 100%;
     text-align: center;
     
@@ -167,6 +167,16 @@ main > div > figure {
     background-color: white;
     padding: 15px;
     margin-top: 2%;
+ }
+
+ #Projets p{
+  color:white;
+ }
+
+ #Projets figure {
+  padding: 7px;
+  background-color: white;
+  border-radius: 100px;
  }
 
 
