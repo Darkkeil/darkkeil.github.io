@@ -3,50 +3,108 @@
     <head>
     <meta charset="utf-8">
     <title>Accueil</title>
-    <link href="Accueil.css" rel="stylesheet">
-    <link href="charte_graphique.css" rel="stylesheet">
+    <link href="CSS/Accueil.css" rel="stylesheet">
+    <link href="CSS/charte_graphique.css" rel="stylesheet">
     </head>
     <body>
         <header>
             <div>
                 <div id = "Accueil">
                     <p id = "select"> Accueil</p>
-                    <a href = "index.html"><figure><img src="Accueil.png" title = "Accueil" alt = "Accueil" width ="30" height ="30"></figure></a>
+                    <a href = "index.html"><figure><img src="IMAGES/Accueil.png" title = "Accueil" alt = "Accueil" width ="30" height ="30"></figure></a>
                 </div>
                 <div id = "Profil">
                     <p> Profil</p>
-                    <a href = "Profil.html"><figure><img src="Profil.png" title = "Profil" alt = "Profil" width ="30" height ="30"></figure></a>
+                    <a href = "HTML/Profil.html"><figure><img src="IMAGES/Profil.png" title = "Profil" alt = "Profil" width ="30" height ="30"></figure></a>
                 </div>
                 <div id = "Projets">
                     <p> Projets</p>
-                    <a href = "Projets.html"><figure><img src="projets.png" title = "Projets" alt = "Projets" width ="30" height ="30"></figure></a>
+                    <a href = "HTML/Projets.html"><figure><img src="IMAGES/projets.png" title = "Projets" alt = "Projets" width ="30" height ="30"></figure></a>
                 </div>
                 <div id = "header_droit">
-                    <a href = "CV.html"><figure><img src="CV.png" title = "CV" alt = "CV" width ="60" height ="60"></a></figure>
-                    <a href = "https://www.linkedin.com/in/youen-minaud-81514726a/?originalSubdomain=fr"><figure><img src="Linkedin.png" title = "Linkedin Youen Minaud" alt = "Linkedin Youen Minaud" width ="60" height ="60"></a></figure>
+                    <a href = "HTML/CV.html"><figure><img src="IMAGES/CV.png" title = "CV" alt = "CV" width ="60" height ="60"></a></figure>
+                    <a href = "https://www.linkedin.com/in/youen-minaud-81514726a/?originalSubdomain=fr"><figure><img src="IMAGES/Linkedin.png" title = "Linkedin Youen Minaud" alt = "Linkedin Youen Minaud" width ="60" height ="60"></a></figure>
                 </div>
             </div>
         </header>
         <main>
             <div>
-                <h1>Site Personnel de Youen Minaud</h1>
-                <p>Bonjour , je suis un étudiant en première année de BUT informatique à l'IUT de Lannion</p>
-                <p>Vous êtes actuellement sur mon site personnel codé en HTML et en CSS</p>
-                <p>Je recherche actuellement une alternance pour septembre 2023</p>
-                <figure><img src="pc.jpg" title = "PC" alt = "PC" width ="40%"></figure>
-                <p>Pour une meilleur naviguation sur ce site veuillez vous déplacez de page en page via les icones des différentes pages</p>
+                <div id="bjr"></div>
+                <div id="intro"></div>
+                <div id="text"></div>
+                <figure><img id="myImage" src="IMAGES/pc-min.jpg" title = "PC" alt = "PC" width ="30%"></figure>
+                <div class="bouton">
+                    <a href="HTML/Projets.html">Accéder à mes projets</a>
+                </div>            
             </div>
+            <br>
+            <br>
         </main>
         <footer>
             <div>
                 <div id = "to_the_top">
-                    <a href = "Accueil.html" ><figure><img src = "top.png" title ="Remonter" alt = "Remonter" width ="30" height  ="30"></figure></a>
+                    <a href = "HTML/Accueil.html" ><figure><img src = "IMAGES/top.png" title ="Remonter" alt = "Remonter" width ="30" height  ="30"></figure></a>
                 </div>
                 <div id = "mail">
-                    <figure><img src="mail.png" title = "mail" alt = "mail" width ="30" height="30"></figure>
+                    <figure><img src="IMAGES/mail.png" title = "mail" alt = "mail" width ="30" height="30"></figure>
                     <a href="mailto:youen.minaud@orange.fr">Me contacter</a>
                 </div>
             </div>
         </footer>
     </body>
 </html>
+
+<script>
+
+    function pause(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    const speed = 60; // Vitesse d'affichage (en millisecondes)
+
+    function typeWriter(texte, id) {
+        let i = 0; // Variable locale pour chaque appel, évitant les interférences
+
+        function writeCharacter() {
+            if (i < texte.length) {
+                document.getElementById(id).innerHTML += texte.charAt(i);
+                i++;
+                setTimeout(writeCharacter, speed);
+            }
+        }
+
+        writeCharacter();
+    }
+
+    function fadeInImage() {
+        const image = document.getElementById("myImage");
+        let opacity = 0; // Opacité de départ
+        const interval = 200; // Intervalle de temps entre chaque augmentation d'opacité (en ms)
+        const increment = 0.02; // Incrémentation de l'opacité à chaque intervalle
+
+        // Fonction pour augmenter l'opacité
+        function increaseOpacity() {
+            opacity += increment;
+            if (opacity <= 1) {
+                image.style.opacity = opacity; // Mettre à jour l'opacité de l'image
+                setTimeout(increaseOpacity, interval); // Relance l'incrémentation après l'intervalle
+            }
+        }
+
+        increaseOpacity(); // Démarre l'effet d'apparition
+    }
+
+
+    async function affichage(){
+        typeWriter("Bonjour, je m'appelle Youen Minaud.","bjr")
+        await pause(6000)
+        typeWriter("Je suis un étudiant en troisième année de BUT informatique à l'IUT de Lannion.","intro")
+        await pause(8000)
+        typeWriter("Je suis des études dans le développement d'application et suis spécialisé dans le développement Back-end","text")
+    }
+
+    affichage()
+
+    window.onload = fadeInImage;
+
+</script>

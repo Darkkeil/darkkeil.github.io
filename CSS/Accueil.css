@@ -1,0 +1,135 @@
+
+header{
+  /*position: sticky;*/
+  /*right: 0;*/
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+header > div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+main{
+    height: 80vh;
+}
+
+main > figure {
+  display: flex;
+  justify-content: center;
+  margin-top: 0em;
+}
+
+main > div {
+  text-align: center;
+  font-size:larger;
+  line-height: 1.5em;
+}
+
+footer{
+    background-color: grey;
+    position: fixed;
+    bottom: 0;
+    left : 0;
+    width: 100%;
+    text-align: center;
+    
+}
+
+#header_droit{
+  display: block;
+  position: absolute;
+  flex-direction: row;
+  right: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+#Accueil{
+  display: flex;
+  flex-direction: column-reverse;
+  padding-left: 0;
+}
+
+#Profil{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#Projets{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+header > div > div > p{
+  margin-top: 0;
+}
+
+header > div > div > p + figure{
+  margin-bottom: 3px;
+}
+
+#mail{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer > div{
+  margin-left : 2 px;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: end;
+}
+
+#to_the_top{
+  display: block;
+  position: absolute;
+  flex-direction: row;
+  left: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+footer > div > div + div > a {
+  margin-right : 14px;
+}
+
+footer > div > div + div > figure {
+  margin-right : 8px;
+}
+
+header > div > div + div + div + div > figure {
+  margin-right : 1px;
+}
+
+#select {
+  background-color: black;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-left: 0;
+  width : fit-content;
+  align-self : center;
+}
+
+#bienvenue{
+  margin-bottom : 10vh;
+}
+
+
+
+
+
+
+

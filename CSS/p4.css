@@ -1,0 +1,196 @@
+
+html{
+    background-color: rgb(226, 238, 237);
+}
+
+
+body{
+  /*color : white;*/
+  margin : 0;
+  padding : 0;
+}
+
+header{
+  background-color: rgb(29, 216, 207);
+  /*position: sticky;*/
+  top: 0;
+  /*right: 0;*/
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+header > div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+header > div > p {
+  margin: 15px;
+}
+
+main{
+    /*background-color: black;*/
+    margin-top: 0;
+    padding-bottom: 80px ;
+    /*position: absolute;
+    top : 40;*/
+}
+
+footer{
+  background-color: grey;
+  position: fixed;
+  bottom: 0;
+  left : 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+
+/*figure {
+  background-color: brown;
+}*/
+
+#header_droit{
+  /*background-color: green;*/
+  display: block;
+  position: absolute;
+  flex-direction: row;
+  right: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+#Accueil{
+  display: flex;
+  flex-direction: column-reverse;
+  padding-left: 0;
+}
+
+#Profil{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#Projets{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+header > div > div > p{
+  margin-top: 0;
+}
+
+header > div > div > p + figure{
+  margin-bottom: 3px;
+}
+
+#mail{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer > div{
+  margin-left : 2 px;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: end;
+}
+
+#to_the_top{
+  /*background-color: green;*/
+  display: block;
+  position: absolute;
+  flex-direction: row;
+  left: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+footer > div > div + div > a {
+  margin-right : 14px;
+  /*background-color: blue;*/
+}
+
+footer > div > div + div > figure {
+  margin-right : 8px;
+  /*background-color: yellow;*/
+}
+
+header > div > div + div + div + div > figure {
+  margin-right : 1px;
+}
+
+#select {
+  background-color: black;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 0;
+  width : fit-content;
+  align-self : center;
+  color : white;
+}
+
+main > div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 150px;
+  padding-right: 150px;
+  text-align: left;
+  font-size: large;
+  line-height: 1.5em;
+}
+
+main > div > h1{
+    text-align: center;
+}
+
+main > div > h3 {
+  text-align: center;  
+}
+
+main > div > figure {
+    align-self: center;
+}
+
+ #Projets p{
+  color:white;
+ }
+
+ #Projets figure {
+  padding: 7px;
+  background-color: white;
+  border-radius: 100px;
+ }
+
+ .space{
+  margin-left: 0.2em;
+ }
+
+ .img{
+    width: 1200px; /* largeur commune */
+    height: 800px; /* hauteur commune */
+    /*object-fit: contain !important; /* Pour remplir l'espace sans déformer */
+ }
+
+ .img-grande{
+  width: 1500px; /* largeur commune */
+  height: 1000px; /* hauteur commune */
+  /*object-fit: contain !important; /* Pour remplir l'espace sans déformer */
+}
+
+
+
+
+
+

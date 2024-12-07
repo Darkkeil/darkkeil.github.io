@@ -1,0 +1,203 @@
+
+html{
+    background-color: black;
+}
+
+body{
+  color : white;
+  margin : 0;
+  padding : 0;
+}
+
+header{
+  background-color: grey;
+  /*position: sticky;*/
+  top: 0;
+  /*right: 0;*/
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+header > div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+header > div > p {
+  margin: 15px;
+}
+
+main{
+    background-color: black;
+    margin-top: 0;
+    padding-bottom: 60px;
+}
+
+main > div > div > figure > img {
+  width : 20ex;
+}
+
+main > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+
+main > div > div {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+footer{
+  background-color: grey;
+  position: fixed;
+  bottom: 0;
+  left : 0;
+  width: 100%;
+  text-align: center;
+  height : 60px;
+  
+}
+
+/*figure {
+  background-color: brown;
+}*/
+
+#header_droit{
+  /*background-color: green;*/
+  display: block;
+  position: absolute;
+  flex-direction: row;
+  right: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+#Accueil{
+  display: flex;
+  flex-direction: column-reverse;
+  padding-left: 0;
+}
+
+#Profil{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#Projets{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+header > div > div > p{
+  margin-top: 0;
+}
+
+header > div > div > p + figure{
+  margin-bottom: 3px;
+}
+
+#mail{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer > div{
+  margin-left : 2 px;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: end;
+}
+
+#to_the_top{
+  /*background-color: green;*/
+  display: block;
+  position: absolute;
+  flex-direction: row;
+  left: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+footer > div > div + div > a {
+  margin-right : 14px;
+  /*background-color: blue;*/
+}
+
+footer > div > div + div > figure {
+  margin-right : 8px;
+  /*background-color: yellow;*/
+}
+
+header > div > div + div + div + div > figure {
+  margin-right : 1px;
+}
+
+#select {
+  background-color: black;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-left: 0;
+  width : fit-content;
+  align-self : center;
+}
+
+main > div{
+    display:flex;
+}
+
+#select {
+  background-color: black;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-left: 0;
+  width : fit-content;
+  align-self : center;
+}
+
+main > div > p , main > div > div > p{
+  font-size: large;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.parent{
+  margin-left : 3em;
+  text-align: justify !important;
+}
+
+h3{
+  background-color: pink;
+  margin-left: 30%;
+  margin-right: 30%;
+  color:black;
+}
+
+.petit-margin{
+  margin-left: 4% !important;
+  margin-right: 0% !important;
+}
+
+.option{
+  line-height: 0.2em !important;
+}
+
+.pas-center{
+  margin-right: 5.5em !important;
+}
+
+
