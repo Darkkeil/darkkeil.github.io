@@ -128,7 +128,7 @@ header > div > div + div + div + div > figure {
 }
 
 body{
-  margin : 0em;
+  margin : 0em !important;
 }
 
 
