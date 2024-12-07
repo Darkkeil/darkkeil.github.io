@@ -127,6 +127,10 @@ header > div > div + div + div + div > figure {
   margin-bottom : 10vh;
 }
 
+body{
+  margin : 0em;
+}
+
 
 
 
