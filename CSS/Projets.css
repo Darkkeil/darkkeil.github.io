@@ -174,3 +174,16 @@ header > div > div + div + div + div > figure {
   object-fit: cover !important; /* Pour remplir l'espace sans déformer */
 }
 
+/* Media Queries pour les écrans plus petits */
+@media (max-width: 1024px) {
+  .wrapper {
+      grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur les écrans plus petits */
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+      grid-template-columns: 1fr; /* Une seule colonne sur les écrans encore plus petits */
+  }
+}
+

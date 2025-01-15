@@ -8,6 +8,13 @@ footer , header {
     background-color: #e0b1b2;
     font-weight: bold;
     color : white;
+    /* Ajouter de l'ombre pour un effet de profondeur */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    /* Ajouter une ombre en haut */
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
 #select {
@@ -64,7 +71,21 @@ a{
     background-color: #e0b1b2;
     padding: 15px;
     margin-top: 2%;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    /* Ajouter de l'ombre pour l'effet de volume */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
  }
+
+ .bouton:hover {
+    /* Ajouter un léger effet de surélévation au survol */
+    transform: translateY(-4px);
+    
+    /* Changer l'ombre pour un effet plus prononcé */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  }
 
  h4{
     font-size: 120%;
@@ -72,5 +93,9 @@ a{
  
  .block-special{
     width : 90%;
+ }
+
+ #to_the_top{
+    scroll-behavior: smooth;
  }
 

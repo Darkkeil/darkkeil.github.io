@@ -62,25 +62,46 @@
 
     const speed = 60; // Vitesse d'affichage (en millisecondes)
 
-    function typeWriter(texte, id) {
-        let i = 0; // Variable locale pour chaque appel, évitant les interférences
+    function typeWriter(texte, id, speed = 50) {
+    let i = 0;
+    const element = document.getElementById(id);
+    element.innerHTML = ""; // Réinitialise le contenu de l'élément
 
-        function writeCharacter() {
-            if (i < texte.length) {
-                document.getElementById(id).innerHTML += texte.charAt(i);
-                i++;
-                setTimeout(writeCharacter, speed);
-            }
-        }
-
-        writeCharacter();
+    // Fonction pour remplacer le texte entre // par une balise <b>
+    function processText(texte) {
+        return texte.replace(/\/(.*?)\//g, "<b>$1</b>"); // Remplace /text/ par <b>text</b>
     }
+
+    // Traite le texte une seule fois avant d'afficher
+    let processedText = processText(texte); // Traite tout le texte
+
+    // Fonction principale qui ajoute le texte progressivement
+    function writeCharacter() {
+        if (i < processedText.length) {
+            element.innerHTML = processedText.substring(0, i + 1); // Affiche le texte progressivement
+            i++;
+            setTimeout(writeCharacter, speed); // Attendre un peu avant de continuer
+        }
+    }
+
+    writeCharacter();
+}
+
+
+
+
+
+
+
+
+
+
 
     function fadeInImage() {
         const image = document.getElementById("myImage");
         let opacity = 0; // Opacité de départ
         const interval = 200; // Intervalle de temps entre chaque augmentation d'opacité (en ms)
-        const increment = 0.02; // Incrémentation de l'opacité à chaque intervalle
+        const increment = 0.03; // Incrémentation de l'opacité à chaque intervalle
 
         // Fonction pour augmenter l'opacité
         function increaseOpacity() {
@@ -96,11 +117,11 @@
 
 
     async function affichage(){
-        typeWriter("Bonjour, je m'appelle Youen Minaud.","bjr")
-        await pause(6000)
-        typeWriter("Je suis un étudiant en troisième année de BUT informatique à l'IUT de Lannion.","intro")
-        await pause(8000)
-        typeWriter("Je suis des études dans le développement d'application et suis spécialisé dans le développement Back-end","text")
+        typeWriter("Bonjour, je m'appelle /Youen Minaud/.","bjr")
+        await pause(4000)
+        typeWriter("Je suis un étudiant en /troisième/ année de /BUT/ informatique à l'IUT de /Lannion/.","intro")
+        await pause(5000)
+        typeWriter("Je suis des études dans le développement d'/application/ et suis spécialisé dans le /développement Back-end/.","text")
     }
 
     affichage()

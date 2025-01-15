@@ -181,6 +181,14 @@ header > div > div + div + div + div > figure {
   margin-right : 8em !important;
 }
 
+/* Media Queries pour les écrans plus petits */
+@media (max-width: 1024px) {
+  .wrapper {
+      grid-template-columns: 1fr; /* Deux colonnes sur les écrans plus petits */
+  }
+}
+
+
 
 
 
