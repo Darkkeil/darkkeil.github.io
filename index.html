@@ -31,7 +31,6 @@
             <div>
                 <div id="bjr"></div>
                 <div id="intro"></div>
-                <div id="text"></div>
                 <div id="alt"></div>
                 <div id="etude"></div>
                 <figure><img id="myImage" src="IMAGES/pc-min.jpg" title = "PC" alt = "PC" width ="30%"></figure>
@@ -121,13 +120,11 @@
     async function affichage(){
         typeWriter("Bonjour, je m'appelle /Youen Minaud/.","bjr")
         await pause(4000)
-        typeWriter("Je suis un étudiant en /troisième/ année de /BUT/ informatique à l'IUT de /Lannion/.","intro")
+        typeWriter("Étudiant en /troisième/ année de /BUT/ informatique à l'IUT de /Lannion/ dans le développement d'/application/ spécialisé dans le /développement Back-end/..","intro")
         await pause(5000)
-        typeWriter("J'étudie dans le développement d'/application/ spécialisé dans le /développement Back-end/.","text")
+        typeWriter("En /alternance/ à la /CPAM des Côtes d'armor/ jusqu'au 31 août 2025.","text")
         await pause(5000)
-        typeWriter("En /alternance/ à la /CPAM des Côtes d'armor/ jusqu'au 31 août 2025.","alt")
-        await pause(5000)
-        typeWriter("À la /fin de mon cursus/ j'envisage d'aller à l'école d'ingénieur de l'/ENSSAT/ afin d'y passer mon diplôme d'/ingénieur/.","etude")
+            typeWriter("À la /fin de mon cursus/ j'envisage d'aller à l'école d'ingénieur de l'/ENSSAT/ afin d'y passer mon diplôme d'/ingénieur/.","alt")
     }
 
     affichage()
